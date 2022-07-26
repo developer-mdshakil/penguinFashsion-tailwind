@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenguinFahsion-Tailwind</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                text_color: '#FABE4C',
+                purperl: '#FFFBF0',
+                penguin: '#A4BC46',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header-start -->
+    <header class="bg-purperl pb-32 pt-12">
+        <!-- banner-section start -->
+        <section class="container mx-auto font-sans sm:flex items-center justify-around px-8 sm:px-0">
+            <article class="space-y-5">
+                <h1 class="text-2xl sm:text-6xl font-bold uppercase"><span class="text-text_color">Be the Penguins</span><br>
+                <span>of Winter</span></h1>
+                <p class="text-base font-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Sapiente a sequi repudiandae rem voluptatibus laudantium alias quaerat accusantium expedita non!</p>
+                <button class="bg-penguin text-white uppercase px-9 py-4 font-semibold text-lg rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline items-center mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    Buy Now</button>
+            </article>
+            <article class="pt-8 sm:pt-0">
+                <img class="w-full" src="images/model.png" alt="">
+            </article>
+        </section>
+        <!-- banner-section end -->
+    </header>
+    <!-- header-end -->
+    <main></main>
+</body>
+</html>
