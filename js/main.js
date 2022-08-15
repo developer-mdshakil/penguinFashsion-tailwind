@@ -27,7 +27,9 @@ newLink.addEventListener('click', function(){
 menuitems.appendChild(newLink);
 
 // banner buy now button dynamic customize
-const buyNow = document.getElementById('buy-now');
-buyNow.addEventListener('click', function(event){
-    buyNow.parentNode.removeChild(event.target)
-})
+const buyNows = document.getElementsByClassName('buy-now');
+for( const buyNow of buyNows){
+    buyNow.addEventListener('click', function(event){
+        buyNow.parentNode.removeChild(event.target);
+    })
+}
